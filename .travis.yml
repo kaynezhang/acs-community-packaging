@@ -24,6 +24,7 @@ branches:
   only:
     - master
     - develop
+    - feature/develop_plus_repo-4710-10.4
 
 stages:
   - name: test
