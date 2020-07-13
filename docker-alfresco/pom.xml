@@ -49,30 +49,6 @@
             <version>${alfresco.alfresco-share-services.version}</version>
             <type>amp</type>
         </dependency>
-        <dependency>
-            <groupId>org.alfresco.aos-module</groupId>
-            <artifactId>alfresco-aos-module</artifactId>
-            <version>${alfresco.aos-module.version}</version>
-            <type>amp</type>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.alfresco.aos-module</groupId>
-                    <artifactId>alfresco-aos-repo-binding</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.alfresco.aos-module</groupId>
-            <artifactId>alfresco-vti-bin</artifactId>
-            <version>${alfresco.aos-module.version}</version>
-            <type>war</type>
-        </dependency>
-        <dependency>
-            <groupId>org.alfresco.integrations</groupId>
-            <artifactId>alfresco-googledrive-repo-community</artifactId>
-            <version>${alfresco.googledrive.version}</version>
-            <type>amp</type>
-        </dependency>
     </dependencies>
 
     <build>
@@ -135,13 +111,6 @@
                                     <type>war</type>
                                     <outputDirectory>${project.build.directory}/war/ROOT</outputDirectory>
                                 </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.alfresco.aos-module</groupId>
-                                    <artifactId>alfresco-vti-bin</artifactId>
-                                    <version>${alfresco.aos-module.version}</version>
-                                    <type>war</type>
-                                    <outputDirectory>${project.build.directory}/war/_vti_bin</outputDirectory>
-                                </artifactItem>
                             </artifactItems>
                         </configuration>
                     </execution>
@@ -185,22 +154,6 @@
                                     <groupId>org.alfresco</groupId>
                                     <artifactId>alfresco-share-services</artifactId>
                                     <version>${alfresco.alfresco-share-services.version}</version>
-                                    <type>amp</type>
-                                    <overWrite>false</overWrite>
-                                    <outputDirectory>${project.build.directory}/amps</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.alfresco.aos-module</groupId>
-                                    <artifactId>alfresco-aos-module</artifactId>
-                                    <version>${alfresco.aos-module.version}</version>
-                                    <type>amp</type>
-                                    <overWrite>false</overWrite>
-                                    <outputDirectory>${project.build.directory}/amps</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.alfresco.integrations</groupId>
-                                    <artifactId>alfresco-googledrive-repo-community</artifactId>
-                                    <version>${alfresco.googledrive.version}</version>
                                     <type>amp</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/amps</outputDirectory>
